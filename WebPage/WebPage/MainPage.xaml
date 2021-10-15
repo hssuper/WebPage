@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WebPage.MainPage">
+
+    <StackLayout>
+        <!--<WebView Source="https://www.df.senac.br/" />-->
+      
+            <Entry x:Name="urlTxt" Placeholder="Digite a URL" />
+            <Button Text="Pesquisar" Clicked="btUrl" />
+            <!-- Exibindo conteúdo HTML código escrito -->
+            <Button Text="Conteúdo HTML" Clicked="btHtml" />
+            <!-- Exibindo conteúdo arquivo HTML local -->
+            <Button Text="Conteúdo arquivo HTML" Clicked="btHtmlLocal" />
+            <WebView x:Name="wv1" VerticalOptions="FillAndExpand" />
+      
+    </StackLayout>
+
+</ContentPage>
